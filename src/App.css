@@ -1,0 +1,183 @@
+/* Landing Page Styles - CHZ Laser Pro */
+
+/* Hero Section Background */
+.hero-bg {
+  background: linear-gradient(to bottom, rgba(10, 10, 10, 0.7), rgba(10, 10, 10, 0.95)),
+    url('https://images.unsplash.com/photo-1657466416279-643be622c14e?q=85&w=1920&auto=format&fit=crop');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* Navigation blur */
+.nav-blur {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Comparison Slider */
+.comparison-slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.comparison-slider .before-image,
+.comparison-slider .after-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.comparison-slider .before-image {
+  clip-path: inset(0 50% 0 0);
+}
+
+.comparison-slider-handle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: #F5A623;
+  cursor: ew-resize;
+  z-index: 10;
+}
+
+.comparison-slider-handle::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #F5A623;
+  box-shadow: 0 0 20px rgba(245, 166, 35, 0.5);
+}
+
+/* Bento Grid */
+.bento-card {
+  transition: all 0.3s ease;
+}
+
+.bento-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(245, 166, 35, 0.5);
+}
+
+/* Process Steps */
+.process-step {
+  position: relative;
+}
+
+.process-step::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -50%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, #F5A623, transparent);
+}
+
+.process-step:last-child::after {
+  display: none;
+}
+
+/* WhatsApp Float Button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 60px;
+  height: 60px;
+  background: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+  z-index: 1000;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 30px rgba(37, 211, 102, 0.6);
+}
+
+/* Form Input Focus */
+.form-input:focus {
+  border-color: #F5A623;
+  box-shadow: 0 0 0 2px rgba(245, 166, 35, 0.2);
+}
+
+/* Gold accent border */
+.gold-border-left {
+  border-left: 4px solid #F5A623;
+}
+
+/* Brown accent border */
+.brown-border-left {
+  border-left: 4px solid #5D3A1A;
+}
+
+/* Animated underline */
+.animated-underline {
+  position: relative;
+  display: inline-block;
+}
+
+.animated-underline::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: #F5A623;
+  transition: width 0.3s ease;
+}
+
+.animated-underline:hover::after {
+  width: 100%;
+}
+
+/* Media placeholder upload area */
+.upload-area {
+  border: 2px dashed rgba(245, 166, 35, 0.4);
+  background: rgba(26, 26, 26, 0.5);
+  transition: all 0.3s ease;
+}
+
+.upload-area:hover {
+  border-color: #F5A623;
+  background: rgba(245, 166, 35, 0.05);
+}
+
+/* Video container */
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe,
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Industrial font for company name */
+.company-name {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
