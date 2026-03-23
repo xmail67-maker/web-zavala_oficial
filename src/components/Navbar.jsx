@@ -53,8 +53,8 @@ export const Navbar = () => {
               alt="CHZ Logo" 
               className="h-14 w-auto"
             />
-            <div className="hidden sm:block">
-              <p className="company-name text-white text-lg tracking-wider">CONSTRUCCIÓN HZ SAC</p>
+            <div className="flex flex-col justify-center">
+              <p className="company-name text-white text-sm md:text-lg tracking-wider">CONSTRUCCIÓN HZ SAC</p>
               <p className="text-[#F5A623] text-xs tracking-[0.2em] uppercase font-medium">Limpieza con Rayos Láser</p>
             </div>
           </a>

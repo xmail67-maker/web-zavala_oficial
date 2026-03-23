@@ -38,7 +38,7 @@ export const AnnouncementBanner = () => {
           />
         </div>
 
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 md:py-5">
+        <div className="relative w-full mx-auto px-2 py-2"
           <div className="flex flex-col md:flex-row items-center justify-center gap-3 md:gap-6 text-center md:text-left">
             {/* Icon */}
             <div className="hidden md:flex items-center justify-center w-10 h-10 bg-[#5D3A1A]/20 rounded-full">
