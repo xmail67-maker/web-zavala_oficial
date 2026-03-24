@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-zinc-950 text-white antialiased;
+  }
+}
+
+@layer components {
+  /* Arreglo para la banda naranja en celulares */
+  .top-banner-container {
+    @apply flex flex-col items-center justify-center text-center gap-2 px-4 py-3 md:flex-row md:gap-6 md:py-2 !important;
+  }
+
+  /* Texto de la banda: más pequeño en móvil para que no se amontone */
+  .top-banner-text {
+    @apply text-[10px] font-bold leading-tight md:text-sm uppercase tracking-tight !important;
+    max-width: 95%;
+  }
+
+  /* Botón de Cupos: más estético en móvil */
+  .top-banner-button {
+    @apply text-[9px] px-2 py-1 md:text-xs md:px-4 md:py-1.5 font-black rounded-full !important;
+  }
+
+  /* Logo: tamaño controlado para que no empuje el resto del contenido */
+  .navbar-logo {
+    @apply h-7 w-auto md:h-10 !important;
+  }
+}
